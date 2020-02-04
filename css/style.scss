@@ -1,0 +1,65 @@
+@import "reset";
+@import "general";
+@import "product";
+@import "also-like";
+
+
+
+//IE 11
+_:-ms-fullscreen, :root {
+.product{
+  &__wrapper {
+    display: block;
+
+  }
+  &__block-photo {
+    display: block;
+    float: left;
+    max-width: 400px;
+    width: 100%;
+    float: left;
+    @include responsive(tablet){
+      max-width: 356px;
+    }
+  }
+  &__block-info{
+    display: block;
+    @include responsive(tablet){
+      position: relative;
+    }
+  }
+  &__block .stars{
+    float: left;
+    @include responsive(tablet){
+      float: none;
+    }
+  }
+  &__block-share{
+  padding-top: 8px;
+    @include responsive(tablet){
+      position: absolute;
+      top:0
+    }
+  }
+  &__block-btn{
+    @include responsive(tablet){
+      text-align: right;
+      padding-right: 9%;
+    }
+  }
+}
+  .also-like{
+    margin-top: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

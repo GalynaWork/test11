@@ -1,0 +1,85 @@
+@import "mixins";
+@import "var";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $open-sans;
+  font-weight: 400;
+  color: $ebony;
+  background-color: $white_smoke;
+  font-size: 14px;
+
+}
+
+svg {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: top;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tablet {
+  display: none;
+  @include responsive(onlyTablet) {
+    display: inline-block;
+  }
+}
+
+.mob {
+  display: none;
+  @include responsive(mobile) {
+    display: inline-block;
+  }
+}
+
+.container {
+  max-width: 934px;
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+  @include responsive(tablet) {
+    max-width: 717px;
+    padding: 0 40px;
+  }
+  @include responsive(mobile) {
+    max-width: 600px;
+    padding: 0 35px;
+  }
+}
+
+.title-level2 {
+  font-size: 14px;
+  line-height: 32.5px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  @include responsive(mobile) {
+    padding-left: 6px;
+    font-size: 16px;
+
+  }
+
+}
+
+.add-to-cart {
+  outline: none;
+  background-color: $riptide;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30.92px;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  @include transition(450ms ease 0s);
+  &:hover {
+    background-color: $humming_bird;
+
+  }
+
+}
