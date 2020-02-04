@@ -19,7 +19,7 @@
     grid-auto-columns: minmax(24px, auto);
     grid-auto-rows: minmax(24px, auto);
     @include responsive(tablet) {
-      @include grid-template-columns(355px 1fr 1fr);
+      @include grid-template-columns(337px 1fr 1fr);
     }
     @include responsive(mobile) {
       @include flexbox;
@@ -121,16 +121,14 @@
     @include align-items(center);
     background-color: $azure;
     width: auto;
-    max-width: 400px;
-    height: 420px;
+    padding: 15px 0;
     @include responsive(tablet) {
-      max-width: 337px;
+      width: auto;
       height: 354px;
       padding-bottom: 15px;
       padding-top: 15px;
     }
     @include responsive(mobile) {
-      max-width: 402px;
       max-width: 100%;
       height: auto;
       padding-bottom: 15px;
@@ -139,12 +137,10 @@
     }
 
     &-img {
-      display: block;
       width: auto;
       max-width: 100%;
       max-height: 100%;
       height: auto;
-
     }
   }
   &__title {
