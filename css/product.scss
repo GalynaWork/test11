@@ -127,6 +127,8 @@
       height: 354px;
       padding-bottom: 15px;
       padding-top: 15px;
+      display: block;
+      text-align: center;
     }
     @include responsive(mobile) {
       max-width: 100%;
