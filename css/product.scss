@@ -369,7 +369,7 @@
         }
         @include responsive(mobile) {
           @include flex-direction(row);
-          @include justify-content(right);
+          @include justify-content(left);
         }
       }
     }
